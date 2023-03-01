@@ -11,72 +11,75 @@
     ></script>
   </head>
   <body>
+    <main style="height: 100vh">
+      <button id="toggleDarkMode" class="styleEnableBtn">
+        <i id="toggleMe" class="m-3 fa-solid fa-sun"></i>
+      </button>
+      <section class="styleSection">
+        <form class="styleForm">
+          <div class="flex flex-col items-center">
+            <h1
+              class="text-center font-bold text-white md:text-3xl m-0 2xsm:text-xl"
+            >
+              USER LOGIN
+            </h1>
+            <div
+              class="text-white md:text-5xl leading-3 md:mb-3 2xsm:m-0 2xsm:text-3xl"
+            >
+              . . .
+            </div>
+          </div>
 
-    <section
-    class="w-full h-full flex justify-center items-center bg-teal-100 p-20"
-  >
-    <form
-      class="bg-teal-500 p-5 md:p-20 flex flex-col rounded-xl space-y-8 shadow-lg shadow-teal-700"
-    >
-      <div class="flex flex-col items-center">
-        <h1 class="text-center font-bold text-white text-2xl">
-          USER LOGIN
-        </h1>
-        <div class="border-t-2 mt-2 w-10"></div>
-      </div>
-      <div class="flex flex-col md:flex-row space-y-2 md:space-x-4 justify-start items-center hover:scale-105 rounded-full">
-        <label class="bg-white rounded-full p-3 shadow-xl"><i class="fa-solid fa-user fa-lg text-teal-500"></i></label>
-        <input class="leading-10 md:leading-10 rounded-3xl pl-5 shadow-xl focus:caret-teal-500" type="text" placeholder="Username" />
-      </div>
+          <div class="styleIconInputDiv">
+            <label class="styleLabel">
+              <i class="fa-solid fa-user styleFa"></i>
+            </label>
+            <input class="styleInputText" type="text" placeholder="Username" />
+          </div>
 
-      <div class="flex flex-col md:flex-row space-y-2 md:space-x-4 justify-start items-center hover:scale-105 rounded-full">
-        <label class="bg-white rounded-full p-3 shadow-xl"
-          ><i class="fa-solid fa-lock fa-lg text-teal-500"></i
-        ></label>
-        <input class="leading-10 md:leading-10 rounded-3xl pl-5 shadow-xl" type="text" placeholder="Password" />
-      </div>
-      <div class="flex flex-col md:flex-row space-y-2 md:space-x-4 justify-start items-center hover:scale-105 rounded-full">
-        <label class="bg-white rounded-full p-3 shadow-xl"
-        ><i class="fa-solid fa-right-to-bracket fa-lg text-teal-500"></i
-          ></label>
-          <button class="leading-10 md:leading-10 bg-white grow rounded-3xl font-bold text-teal-500 shadow-xl w-full">LOGIN</button>
-        </div>
-        <a href="#" class="text-center text-slate-500 hover:text-white">Forgot Password ?</a>
-      </form>
-    </section>
+          <div class="styleIconInputDiv">
+            <label class="styleLabel">
+              <i class="fa-solid fa-lock styleFa"></i>
+            </label>
+            <input class="styleInputText" type="text" placeholder="Password" />
+          </div>
 
+          <div class="styleIconInputDiv">
+            <label class="styleLabel">
+              <i class="fa-solid fa-right-to-bracket styleFa"></i>
+            </label>
+            <button class="styleLoginButton">LOGIN</button>
+          </div>
+          <a
+            href="#"
+            class="text-center font-bold text-slate-500 hover:text-white"
+            >Forgot Password ?</a
+          >
+        </form>
+        <section class="2xsm:w-2/3 md:w-1/2">
+          <p class="styleLorem1">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
 
-    <section class="bg-rose-300 py-2 px-2 min-w-fit">
-      <div
-        class="flex flex-row bg-rose-100 hover:bg-rose-200 rounded-xl space-x-5 p-5"
-      >
-        <div class="boxFlex"><p class="styleP">01</p></div>
-        <div class="boxFlex"><p class="styleP">02</p></div>
-        <div class="boxFlex"><p class="styleP">03</p></div>
-        <div class="boxFlex"><p class="styleP">04</p></div>
-      </div>
+          <p class="styleLorem2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
 
-      <hr class="my-5" />
-
-      <div
-        class="flex flex-row bg-rose-100 hover:bg-rose-200 rounded-xl space-x-5 p-5"
-      >
-        <div class="boxNotFlex"><p class="styleP">01</p></div>
-        <div class="boxNotFlex"><p class="styleP">02</p></div>
-        <div class="boxGrow animate-pulse"><p class="styleP">03</p></div>
-        <div class="boxNotFlex"><p class="styleP">04</p></div>
-      </div>
-
-      <hr class="my-5" />
-
-      <div
-        class="flex flex-row bg-rose-100 hover:bg-rose-200 rounded-xl space-x-5 p-5"
-      >
-        <div class="boxGrow"><p class="styleP">01</p></div>
-        <div class="boxGrow"><p class="styleP">02</p></div>
-        <div class="boxNotGrow animate-pulse"><p class="styleP">03</p></div>
-        <div class="boxGrow"><p class="styleP">04</p></div>
-      </div>
-    </section>
+          <p class="styleLorem3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </section>
+      </section>
+    </main>
+    <script src="./src/toggleDarkMode.js"></script>
   </body>
 </html>
