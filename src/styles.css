@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .boxFlex {
+    @apply w-14 h-40 bg-gradient-to-tr from-rose-600 to-rose-400 rounded-xl flex flex-1 justify-center items-center;
+  }
+
+  .boxNotFlex {
+    @apply w-14 h-40 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-xl flex justify-center items-center;
+  }
+
+  .boxGrow {
+    @apply w-14 h-40 bg-gradient-to-tr from-indigo-600 to-indigo-400 rounded-xl flex grow justify-center items-center;
+  }
+
+  .boxNotGrow {
+    @apply w-14 h-40 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-xl flex grow-0 justify-center items-center;
+  }
+
+  .styleP {
+    @apply inline-block p-2 bg-slate-200 rounded-lg;
+  }
+}
